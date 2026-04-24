@@ -4,6 +4,12 @@ A pixel-perfect recreation of [oliveapp.com](https://www.oliveapp.com/) built wi
 
 ---
 
+
+## Live Demo
+
+https://olive-app-sandy.vercel.app/
+
+
 ## 📁 Folder Structure
 
 ```
@@ -60,6 +66,13 @@ npm run start
 ```
 
 ---
+
+## Features
+- Responsive navbar with dropdowns
+- Pixel-perfect UI based on screenshot
+- Mobile responsive layout
+- Smooth hover interactions
+
 
 ## 🎨 Design Decisions
 

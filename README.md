@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🫒 Olive App — Landing Page Clone
 
-## Getting Started
+A pixel-perfect recreation of [oliveapp.com](https://www.oliveapp.com/) built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📁 Folder Structure
+
+```
+olive-app/
+├── app/
+│   ├── globals.css          # Global styles, CSS variables, animations
+│   ├── layout.tsx           # Root layout with metadata
+│   └── page.tsx             # Main home page
+├── components/
+│   ├── HeroSection.tsx      # Hero with heading, CTAs, social proof
+│   ├── Navbar.tsx           # Top navigation bar
+│   ├── OliveLogo.tsx        # SVG olive logo
+│   └── PhoneMockup.tsx      # Phone UI mockup with product card
+├── public/                  # Static assets (empty, SVGs inlined)
+├── next.config.js           # Next.js configuration
+├── package.json             # Dependencies
+├── postcss.config.js        # PostCSS for Tailwind
+├── tailwind.config.ts       # Tailwind custom theme
+├── tsconfig.json            # TypeScript config
+└── README.md                # This file
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- **Node.js** v18.17 or later
+- **npm** v9+
 
-To learn more about Next.js, take a look at the following resources:
+### Installation & Running
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# 1. Clone or create the project folder
+mkdir olive-app && cd olive-app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 2. Copy all files as per folder structure above
 
-## Deploy on Vercel
+# 3. Install dependencies
+npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 4. Start development server
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Build
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 🎨 Design Decisions
+
+| Feature | Implementation |
+|---|---|
+| Background color | `#f0f0e8` — warm cream matching original |
+| Primary font | Georgia serif for headings (matches original editorial feel) |
+| Brand green | `#2d5016` — dark olive green |
+| CTA button | Rounded pill, dark green |
+| Phone mockup | Pure CSS/SVG — no external images needed |
+| Animations | CSS keyframes with staggered delays |
+| Layout | Max-width centered, responsive |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 14** — App Router
+- **TypeScript** — Type safety
+- **Tailwind CSS** — Utility-first styling
+- **CSS Variables** — Theme consistency
+- **SVG** — All icons and logo inline
+
+---
+
+## 📱 Responsive Breakpoints
+
+- Mobile: < 768px — stacked layout, ghost cards hidden
+- Tablet: 768px–1024px
+- Desktop: > 1024px — full layout with ghost phone cards
+
+---
+
+
+---
+
+## 📋 Commands Summary
+
+```bash
+npm install          # Install dependencies
+npm run dev          # Start dev server at localhost:3000
+npm run build        # Create production build
+npm run start        # Serve production build
+npm run lint         # Run ESLint
+```
